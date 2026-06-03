@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>USA</title>
+    <link rel="stylesheet" href="enig.css">
+    
 </head>
 <body>
-  Etapa 5/20
+<audio src="enig.mp3" autoplay id="ad"></audio>  
+<p>ETAPA 5/20</p>
+<img src="Train.jpg" alt="" id="tr">
+<img src="Infinity.png" alt="" id="inf">
+<p id="t">08:35</p>
+
+<script>
+  const audio = document.getElementById('ad');
+  const intervalo = 4500; 
+  audio.addEventListener('ended', function() {    
+    setTimeout(function() {
+        audio.play();
+    }, intervalo);   
+})
+</script>
 </body>
-</html>
