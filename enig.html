@@ -8,11 +8,12 @@
     
 </head>
 <body>
-<audio src="enig.mp3" autoplay id="ad"></audio>  
+<audio src="enig.mp3" id="ad"></audio>  
 <p>ETAPA 5/20</p>
 <img src="Train.jpg" alt="" id="tr">
 <img src="Infinity.png" alt="" id="inf">
 <p id="t">08:35</p>
+<input type="button" value="clique" id="b" onclick="tocaudio()">
 
 <script>
   const audio = document.getElementById('ad');
@@ -22,5 +23,9 @@
         audio.play();
     }, intervalo);   
 })
+    function tocaudio(){
+        audio.play()
+        document.getElementById('b').style.display = 'none'
+    }
 </script>
 </body>
